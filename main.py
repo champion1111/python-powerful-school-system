@@ -9,7 +9,7 @@ from student import Student
 sc = School()
 
 while(True):
-    cmd = input("which do you want??\n** Press [ctrl+c] to quit\nadd_Student(ast)\tprint_All(p)\tadd_Score(asc)\tcheck_fail(cf)")
+    cmd = input("which do you want??\n** Press [ctrl+c] to quit\nadd_Student(ast)\tprint_All(p)\tadd_Score(asc)\tcheck_fail(cf)\nidiot(li)\tgenius(lg)")
     if cmd == "ast":
         name = input("name: ")
         sex = input("sex [M/F]: ")
@@ -31,3 +31,7 @@ while(True):
         s.add_score(score)
     elif cmd == "cf":
         sc.list_fail()
+    elif cmd == "lg":
+        sc.list_genious()
+    elif cmd == "li":
+        sc.list_idiot()

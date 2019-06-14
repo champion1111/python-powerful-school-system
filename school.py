@@ -28,3 +28,13 @@ class School:
             for sc in s.score:
                 if sc < 60:
                     print(f"{s.name} is fail.")
+
+    def list_genious(self):
+        for s in self.students:
+            if s.average() > 95:
+                print(f"{s.name} is genious.")
+
+    def list_idiot(self):
+        for s in self.students:
+            if s.average() < 60:
+                print(f"{s.name} is idiot!!")
